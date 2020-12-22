@@ -3,7 +3,7 @@
 # Modeling
 This project mainly aims to explore the uncertainty in feedforward neural networks. First an artificial neural network was fit. This was an overfit artificial neural network, as can be seen below. The aim was not to fit a very accurate model, but rather to explore the predictions made and the certainty with which they were made. 
 
-![](https://github.com/pfvbell/Flights_ANN/blob/main/accuracy%20vs%20ppr.png)
+![](https://github.com/pfvbell/Flights_ANN/blob/main/train_val_loss.png)
 
 # Interpretability step 1: Exploring feature importance
 Then a logistic regression proxy model was trained using the predictions from the original artificial neural network. This allowed interpretation of the major predictors for flight delay and I found that the departure hour of the flight was the most important predictor (using sklearn's 'permutation importance' function on the proxy model.)
